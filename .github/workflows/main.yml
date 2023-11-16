@@ -18,9 +18,9 @@ jobs:
     steps:
       - name: Build and test PHP code
         run: |
-          # Run unit tests here if you have specific commands
-          # For example:
-          # docker-compose -f docker-compose.test.yml up --exit-code-from test
+          # Install dependencies (if needed)
+          composer install
+          docker-compose -f docker-compose.test.yml up --exit-code-from test
 
   deploy:
     runs-on: ubuntu-latest
