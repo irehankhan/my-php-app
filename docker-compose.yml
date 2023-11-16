@@ -1,0 +1,31 @@
+   version: '3.8'
+   services:
+     web:
+      build:
+          context: .
+          dockerfile: Dockerfile
+      # image: php:apache
+      container_name: php-app
+      ports:
+      - "2023:80"
+      volumes:
+      - .:/var/www/html
+      - ./mysql.sql:/mysql.sql
+
+     db:
+      #  platform: linux/x86_64
+       image: mysql:latest
+       container_name: mysql-db
+       command: --default-authentication-plugin=mysql_native_password
+       restart: always
+       environment:
+         MYSQL_ROOT_PASSWORD: your_password
+         MYSQL_DATABASE: mydatabase
+       ports:
+         - "3306:3306"
+       volumes:
+         - mysql_data:/var/lib/mysql
+         - ./mysql.sql:/docker-entrypoint-initdb.d/mysql.sql
+
+   volumes:
+     mysql_data:
