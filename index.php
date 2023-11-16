@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($conn->query($sqlDelete) === TRUE) {
             echo "Record deleted successfully!";
         } else {
-            echo "Error deleting record: " . $conn->error;
+            echo "Error deleting record: " . $conn->error
         }
     }
 
