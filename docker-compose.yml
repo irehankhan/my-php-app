@@ -5,7 +5,6 @@
           context: .
           dockerfile: Dockerfile
       # image: php:apache
-      platform: linux/arm64/v8
       container_name: php-app
       ports:
       - "2023:80"
@@ -14,7 +13,7 @@
       - ./mysql.sql:/mysql.sql
 
      db:
-       platform: linux/arm64/v8
+      #  platform: linux/arm64/v8
        image: mysql:latest
        container_name: mysql-db
        command: --default-authentication-plugin=mysql_native_password
