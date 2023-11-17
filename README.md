@@ -221,7 +221,7 @@ docker build -t web-server -f Dockerfile-custom .
 ```
 Replace "Dockerfile-custom" with the actual filename of your Dockerfile if it's different.
 
-![Alt text](image.png)
+![Alt text](./Images/image.png)
 
 ## For Database
 - For Database we will use dockerfile of database `Dockerfile-sql` for building docker image using below command.
@@ -239,7 +239,7 @@ Make sure that your MySQL-related files, such as "mysql.sql" or any other files 
 
 It will build docker image with name `web-db` you can see below logs.
 
-![Alt text](image-1.png)
+![Alt text](./Images/image-1.png)
 
 # RUN Docker Containers for above images
 ## For Database
@@ -368,7 +368,7 @@ http://192.168.100.4:2023/
 ```
 ## Result
 
-![Alt text](image-2.png)
+![Alt text](./Images/image-2.png)
 
 # Docker Compose
 
@@ -532,7 +532,7 @@ http://192.168.100.4:2023/
 ```
 Result
 
-![Alt text](image-3.png)
+![Alt text](./Images/image-3.png)
 
 # Github Actions CI/CD pipelines and Deploy to Docker Hub
 
@@ -725,25 +725,25 @@ From the list of workflows, select the workflow you want to check.
 
 ### Workflow logs.
 
-![Alt text](image-4.png)
+![Alt text](./Images/image-4.png)
 
-![Alt text](image-5.png)
+![Alt text](./Images/image-5.png)
 
-![Alt text](image-6.png)
+![Alt text](./Images/image-6.png)
 
-![Alt text](image-7.png)
+![Alt text](./Images/image-7.png)
 
-![Alt text](image-8.png)
+![Alt text](./Images/image-8.png)
 
-![Alt text](image-9.png)
+![Alt text](./Images/image-9.png)
 
 ## Docker Hub Deploy
 
 Image pushed to docker hub
 
-![Alt text](image-11.png)
+![Alt text](./Images/image-11.png)
 
-![Alt text](image-10.png)
+![Alt text](./Images/image-10.png)
 
 
 <h1>Thank You! </h1>
