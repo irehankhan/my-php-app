@@ -657,7 +657,47 @@ Now lastly configure git in your local directory and create repo on github. Then
 
 ### git logs
 ```bash
+irehankhan@Rehans-Mac-mini Github_actions_db % git status
+On branch main
+Your branch is up to date with 'origin/main'.
 
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+	modified:   index.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	image-1.png
+	image-2.png
+	image-3.png
+	image.png
+
+no changes added to commit (use "git add" and/or "git commit -a")
+irehankhan@Rehans-Mac-mini Github_actions_db % git add .
+irehankhan@Rehans-Mac-mini Github_actions_db % git commit -m "FINAL COMMIT"
+[main 1807e4b] FINAL COMMIT
+ 6 files changed, 691 insertions(+), 3 deletions(-)
+ create mode 100644 image-1.png
+ create mode 100644 image-2.png
+ create mode 100644 image-3.png
+ create mode 100644 image.png
+irehankhan@Rehans-Mac-mini Github_actions_db % git push -u origin main                             
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.51 MiB | 1.11 MiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: Bypassed rule violations for refs/heads/main:
+remote: 
+remote: - Changes must be made through a pull request.
+remote: 
+To github.com:irehankhan/my-php-app.git
+   3842abf..1807e4b  main -> main
+branch 'main' set up to track 'origin/main'.
 ```
 
 The workflow we use set's up to be triggered automatically on each push to the main branch. Here's the relevant part of the workflow file:
@@ -683,8 +723,27 @@ From the list of workflows, select the workflow you want to check.
 4. Monitor Workflow Run:
     - Once triggered, you can monitor the progress of the workflow run on the same "Actions" page. GitHub will display the steps and logs as the workflow progresses.
 
-Workflow logs.
+### Workflow logs.
+
+![Alt text](image-4.png)
+
+![Alt text](image-5.png)
+
+![Alt text](image-6.png)
+
+![Alt text](image-7.png)
+
+![Alt text](image-8.png)
+
+![Alt text](image-9.png)
+
+## Docker Hub Deploy
+
+Image pushed to docker hub
+
+![Alt text](image-11.png)
+
+![Alt text](image-10.png)
 
 
-
-
+<h1>Thank You! </h1>
