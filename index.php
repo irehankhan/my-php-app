@@ -1,6 +1,8 @@
 <?php
-$servername = "192.168.100.4"; // Docker service name. when running from docker compose use your db service from docker-compose file.
-$username = "rehan"; // MySQL your own username. username must be same used in mysql.sql file . When running from docker compose use root user.
+$servername = "db"; // Docker service name. 
+// when running from docker compose use your db service name "db" from docker-compose file.
+$username = "root"; // MySQL your own username. 
+// username must be same used in mysql.sql file . When running from docker compose use root user.
 $password = "your_password"; // MySQL password
 $dbname = "mydatabase"; // MySQL database name
 
