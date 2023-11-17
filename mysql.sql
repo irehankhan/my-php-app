@@ -1,3 +1,5 @@
+CREATE USER 'rehan'@'%' IDENTIFIED BY 'your_password';
+grant all privileges on *.* to 'rehan'@'%' with grant option;
    CREATE DATABASE IF NOT EXISTS mydatabase;
    USE mydatabase;
 
